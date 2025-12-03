@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .listname,.addhope {
+        height: 32px;
+        width: 100px;
+    }
+
+    th,td {
+        width: 100px;
+        height: 50px;
+        border: 2px solid red;
+    }
+
+     .tableshow{
+        margin-top: 50px;
+        margin-left: 30px;
+        border-collapse: collapse;
+    }
+  .tablenone{
+    display: none;
+    }
+    .listname{
+        height: 40px;
+        background-color: red;
+        width: 100px;
+    }
+    .listnameNone{
+         height: 40px;
+        background-color: white;
+        width: 100px;
+    }
+    .addhope{
+         height: 40px;
+        background-color: red;
+        width: 100px;
+    }
+    .addhopeNone{
+         height: 40px;
+        background-color: white;
+        width: 100px;
+    }
+    .selectdata,.content-container{
+        display: flex;
+        margin-top: 100px;
+    }
+    .add{
+        margin-top: 100px;
+        background-color: red;
+        border-radius: 20px;
+        width: 150px;
+        height: 75px;
+    }
+    .addhopeContainerNone{
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="menu-container">
+        <div class="hooplist-container">
+            <button class="listname">希望列表</button>
+        </div>
+        <div class="addhoop-container">
+            <button class="addhopeNone">添加希望</button>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <th>日期</th>
+            <th>内容</th>
+            <th>操作</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div class='addhopeContainerNone'>
+       <div class="selectdata">
+            <div>日期</div>
+            <input type="datetime-local">
+       </div>
+       <div class="content-container">
+        <div class="content">内容</div>
+        <input type="text">
+       </div>
+       <button class="add">确认添加</button>
+    </div>
+</body>
+<script src="./hopelist.js"></script>
+</html>
