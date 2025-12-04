@@ -20,7 +20,7 @@ registerBtn.addEventListener('click', function () {
 })
 function addInfo() {
   flag = true
-  if (usernameBtn.value.length != 11 || usernameBtn.value[0] != 1) {
+  if (usernameBtn.value!='') {
     flag = false
     alert('电话号码不正确');
     usernameBtn.value = '';
@@ -69,4 +69,5 @@ function verify() {
     verifyArr[i] = Arr[index];
   }
   verifyDom.innerHTML = verifyArr.join('');
+
 }
