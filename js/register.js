@@ -20,9 +20,9 @@ registerBtn.addEventListener('click', function () {
 })
 function addInfo() {
   flag = true
-  if (usernameBtn.value!='') {
+  if (usernameBtn.value=='') {
     flag = false
-    alert('电话号码不正确');
+    alert('请输入用户名或电话号码');
     usernameBtn.value = '';
   }
   if (userpsdBtn.value.trim() == reuserpsdBtn.value.trim()) {
@@ -71,3 +71,4 @@ function verify() {
   verifyDom.innerHTML = verifyArr.join('');
 
 }
+
